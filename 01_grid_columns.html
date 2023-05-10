@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Columns</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-columns: 200px auto 200px;
+        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 200px);
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-gap: 1rem;
+      }
+      .item {
+        padding: 3rem;
+        background: #f4f4f4;
+        border: #ccc 1px solid;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.4rem;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </div>
+    <main>
+      <section>
+        <h3>Welcome to my site</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, illo
+          similique repudiandae nobis ea magnam tempora temporibus aliquid vero
+          modi voluptates! Cum ut explicabo error soluta iusto itaque laboriosam
+          animi minus saepe nobis eum quis quaerat, voluptatum vitae autem
+          officiis quos voluptatibus totam unde. Omnis sapiente libero dicta
+          quam totam. Nobis ut officia nulla illo, itaque laborum alias. Illum
+          vero earum blanditiis dolorum corporis inventore rerum voluptates.
+          Sapiente consequatur quo cumque dolor officia quisquam unde, non
+          debitis modi nostrum quidem vero quod quis earum eum, molestiae facere
+          nam natus? Eligendi facilis nam porro error similique culpa, sapiente
+          beatae recusandae explicabo?
+        </p>
+      </section>
+      <aside>
+        <h3>Contact Us</h3>
+        <ul>
+          <li>AtHome Company</li>
+          <li>43 Paghanapin St., Tondo Manila</li>
+          <li>athome@yourcompany.com</li>
+        </ul>
+      </aside>
+    </main>
+  </body>
+</html>
